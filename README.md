@@ -1,3 +1,4 @@
+# Android Stress Meter Application.
 Hello!
 
 Welcome to my Stress Meter Application.
@@ -6,4 +7,9 @@ In this assignment I have implemented a program that queries the user multiple t
 
 The app comprises 4 views: the image request, image response, visualization and NavigationView. 
 
+## Running the App:
 To run the application, simply load the Boris_Perdija_Stress_Meter.apk into an android device and run!
+
+## Sample:
+https://github.com/bperdija/Stress-Meter/assets/59851304/aa53d744-e587-4987-accf-eeb82741cb18
+
