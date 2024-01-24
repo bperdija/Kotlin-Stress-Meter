@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StressMeterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Touch the image that best captures how stressed you feel right now"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="100px"/>
+
+        <GridView
+            android:id="@+id/gridImages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:numColumns="4"
+            android:layout_marginTop="100px"
+            android:verticalSpacing="20px"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/moreImagesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="More Images"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="50px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:height="150px"/>
+    </LinearLayout>
+
+</RelativeLayout>

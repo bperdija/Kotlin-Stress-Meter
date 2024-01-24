@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Results"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="50px"/>
+
+        <TextView
+            android:id="@+id/warningLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Enter at Least 2 Data Points for an Accurate Graph"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="20px" />
+
+        <com.db.williamchart.view.LineChartView
+            android:id="@+id/chartData"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            app:chart_axis="xy"
+            app:chart_gridEffect="dashed"
+            app:chart_lineColor="@color/primaryColor"
+            app:chart_lineThickness="3dp"
+            app:chart_smoothLine="true"
+            app:chart_pointsDrawable="@drawable/chartdot"
+            app:chart_grid="horizontal"
+            app:chart_gridColor="@color/secondaryGray"
+            app:chart_gridStrokeWidth="1dp"
+            app:chart_labelsColor="@color/secondaryGray"
+            app:chart_labelsSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="24dp"
+            android:text="Data"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/border_bg">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stretchColumns="1"
+                android:layout_margin="10dp">
+                <TableRow>
+                    <TextView
+                        android:text="Date"
+                        android:width="200dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="Score"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
